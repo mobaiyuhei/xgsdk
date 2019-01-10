@@ -4,5 +4,5 @@
 
 本章节适用于游戏服务端开发人员
 
-[**h5加壳服务端接口说明**](/jie-ru-wen-dang/21-h5jia-ke-fu-wu-duan-jie-kou-shuo-ming.md "h5加壳服务端接口说明")
+[**h5加壳服务端接口说明**](/chapter2/article1.md "h5加壳服务端接口说明")
 
