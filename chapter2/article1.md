@@ -246,7 +246,8 @@ function onXGLogoutFinish(data) {
 
 ```js
 function onXGdoExit() {
-    document.getElementById("log_msg").innerHTML = ("onXGdoExit... 已提供退出引导，游戏不需要使用自己的退出引导");
+    document.getElementById("log_msg").innerHTML = ("onXGdoExit... 
+已提供退出引导，游戏不需要使用自己的退出引导");
 }
 ```
 
@@ -262,7 +263,8 @@ function onXGdoExit() {
 
 ```js
 function onXGNoChannelExiter(code, msg) {
-    document.getElementById("log_msg").innerHTML = ("onXGNoChannelExiter... 未提供退出引导,游戏需要使用自己的退出引导，进行退出");
+    document.getElementById("log_msg").innerHTML = ("onXGNoChannelExiter... 
+未提供退出引导,游戏需要使用自己的退出引导，进行退出");
 }
 ```
 
@@ -281,7 +283,8 @@ function onXGNoChannelExiter(code, msg) {
 * **代码**
 
 ```js
-<button id="btn_release" onclick="window.XGAndroid.callXGReleaseResource()">调用 西瓜SDK 【release source】</button>
+<button id="btn_release" onclick="window.XGAndroid.callXGReleaseResource()">
+调用 西瓜SDK 【release source】</button>
 ```
 
 * **注意:**
@@ -743,7 +746,8 @@ js代码:
 
 ```js
 html代码:
- <button id="btn_switch_account" onclick="switchAccount()">调用 西瓜SDK 【switch account】</button>
+ <button id="btn_switch_account" onclick="switchAccount()">
+调用 西瓜SDK 【switch account】</button>
 
 js代码:
 
@@ -891,7 +895,8 @@ function missionBegin() {
 
 ```js
 html代码:
-   <button id="btn_mission_success" onclick="missionSuccess()">调用 西瓜SDK 【MissionSuccess】</button>
+   <button id="btn_mission_success" onclick="missionSuccess()">
+调用 西瓜SDK 【MissionSuccess】</button>
 
 js代码:
 
@@ -1014,7 +1019,8 @@ function missionFail() {
 
 ```js
 html代码:
-    <button id="btn_Virtual_currency_purchase" onclick="onVirtualCurrencyPurchase()">调用 西瓜SDK 购买虚拟货币【onVirtualCurrencyPurchase】</button>
+    <button id="btn_Virtual_currency_purchase" onclick="onVirtualCurrencyPurchase()">
+调用 西瓜SDK 购买虚拟货币【onVirtualCurrencyPurchase】</button>
 
 js代码:
 
@@ -1075,7 +1081,8 @@ function onVirtualCurrencyPurchase() {
 
 ```js
 html代码:
-    <button id="btn_virtual_currency_reward" onclick="onVirtualCurrencyReward()">调用 西瓜SDK 赠送虚拟货币 【onVirtualCurrencyReward】</button>
+    <button id="btn_virtual_currency_reward" onclick="onVirtualCurrencyReward()">
+          调用 西瓜SDK 赠送虚拟货币 【onVirtualCurrencyReward】</button>
 
 js代码:
 
@@ -1142,7 +1149,8 @@ function onVirtualCurrencyReward() {
 
 ```js
 html代码:
-   <button id="btn_virtual_currency_consume" onclick="onVirtualCurrencyConsume()">调用 西瓜SDK 消费虚拟货币【onVirtualCurrencyConsume】</button>
+   <button id="btn_virtual_currency_consume" onclick="onVirtualCurrencyConsume()">
+   调用 西瓜SDK 消费虚拟货币【onVirtualCurrencyConsume】</button>
 
 js代码:
 
@@ -1213,7 +1221,8 @@ function onVirtualCurrencyConsume() {
 
 ```js
 html代码:
-   <button id="btn_open_webActivity" onclick="openWebActivity()">调用 西瓜SDK 礼包码兑换，绑定手机号【openWebActivity】</button>
+   <button id="btn_open_webActivity" onclick="openWebActivity()">
+   调用 西瓜SDK 礼包码兑换，绑定手机号【openWebActivity】</button>
 
 js代码:
 //礼包码兑换，绑定手机号
@@ -1234,7 +1243,8 @@ function openWebActivity() {
 ```js
 {
     "uid": '123',   //玩家uid
-    "activityType": 'ACTIVITY_TYPE_GIFT',  //活动类型（ACTIVITY_TYPE_GIFT/ACTIVITY_TYPE_MOBILE_BIND分别为兑换礼包码和绑定手机号）
+    "activityType": 'ACTIVITY_TYPE_GIFT',  
+//活动类型（ACTIVITY_TYPE_GIFT/ACTIVITY_TYPE_MOBILE_BIND分别为兑换礼包码和绑定手机号）
     "roleId": '123'   //玩家角色ID
     "zoneId": '123',    //游戏区ID
     "serverId":'123'  //游戏服ID
@@ -1253,7 +1263,8 @@ function openWebActivity() {
 
 ```js
 html代码:
-   <button id="btn_exchange_giftCode" onclick="exchangeGiftCode()">调用 西瓜SDK 礼包码兑换(游戏提供界面)，绑定手机号【exchangeGiftCode】</button>
+   <button id="btn_exchange_giftCode" onclick="exchangeGiftCode()">
+调用 西瓜SDK 礼包码兑换(游戏提供界面)，绑定手机号【exchangeGiftCode】</button>
 
 js代码:
 //礼包码兑换 （游戏提供界面）
@@ -1317,7 +1328,8 @@ function onXGExchangeGiftCodeFinish(data) {
 
 ```js
 html代码:
-  <button id="btn_send_captcha" onclick="sendCaptcha()">调用 西瓜SDK 绑定手机号,发送验证码【sendCaptcha】</button>
+  <button id="btn_send_captcha" onclick="sendCaptcha()">
+调用 西瓜SDK 绑定手机号,发送验证码【sendCaptcha】</button>
 
 js代码:
 //发送验证码
@@ -1381,7 +1393,8 @@ function onXGSendCaptchaFinish(data) {
 
 ```js
 html代码:
- <button id="btn_bind_mobile" onclick="bindMobile()">调用 西瓜SDK 绑定手机号【bindMobile】</button>
+ <button id="btn_bind_mobile" onclick="bindMobile()">调用 西瓜SDK 
+绑定手机号【bindMobile】</button>
  
  js代码:
 //绑定手机号
@@ -1469,7 +1482,8 @@ function onXGBindMobileFinish(data) {
 
 ```js
 function onXGInitQuestionnaire(data) {
-    document.getElementById("log_msg").innerHTML = ("onXGInitQuestionnaire...questionnaireName =" + questionnaireName);
+    document.getElementById("log_msg").innerHTML = ("onXGInitQuestionnaire...
+questionnaireName =" + questionnaireName);
 }
 ```
 - **输出数据格式**
@@ -1489,7 +1503,8 @@ questionnaireName
 
 ```js
 function onXGFinishQuestionnaire(giftInfo) {
-    document.getElementById("log_msg").innerHTML = ("onXGFinishQuestionnaire...giftInfo = " + giftInfo);
+    document.getElementById("log_msg").innerHTML = ("onXGFinishQuestionnaire...
+giftInfo = " + giftInfo);
 }
 ```
 - **输出数据格式**
@@ -1509,7 +1524,8 @@ giftInfo
 
 ```js
 html代码:
- <button id="btn_refresh_questionnaire" onclick="refreshQuestionnaire()">调用 西瓜SDK 刷新问卷【refreshQuestionnaire】</button>
+ <button id="btn_refresh_questionnaire" onclick="refreshQuestionnaire()">
+调用 西瓜SDK 刷新问卷【refreshQuestionnaire】</button>
  
  js代码:
 function refreshQuestionnaire() {
@@ -1565,7 +1581,8 @@ function refreshQuestionnaire() {
 
 ```js
 html代码:
- <button id="btn_open_questionnaire" onclick="openQuestionnaire()">调用 西瓜SDK 打开问卷【openQuestionnaire】</button>
+ <button id="btn_open_questionnaire" onclick="openQuestionnaire()">
+调用 西瓜SDK 打开问卷【openQuestionnaire】</button>
  
  js代码:
 function openQuestionnaire() {
