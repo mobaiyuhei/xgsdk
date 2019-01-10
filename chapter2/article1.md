@@ -727,7 +727,7 @@ js代码:
 >  建议在所有的User Role Server 信息都获取到以后再进行调用
 
 ---
-**待定未接!!!!!!!**
+
 
 ## 5.扩展接口 
 ### 5.1 切换账号
@@ -874,14 +874,131 @@ function missionBegin() {
     "missionId": "111", //任务ID
     "missionName": "测试开始任务",   //任务名称
     "doMissionTimes": 10,    //任务执行时间
-    "roleCurrentPower": 10  //todo!!!!!
+    "roleCurrentPower": 1  //角色权限
 }
 
 ```
-//todo 为啥不是回调
-### 5.4 任务成功
-### 5.5 任务失败
 
+### 5.4 任务成功
+- **接口**
+**window.XGAndroid.callXGMissionSuccess(data)**
+
+- **接口说明**
+> 任务执行成功接口
+- **参数说明**
+>  参考下方【输入数据格式】
+- **代码**
+
+```js
+html代码:
+   <button id="btn_mission_success" onclick="missionSuccess()">调用 西瓜SDK 【MissionSuccess】</button>
+
+js代码:
+
+function missionSuccess() {
+     var roleInfo={};
+     roleInfo.uid='uc_29c4bb6d76924a86c020397c94d2b138';
+     roleInfo.serverId='1200';
+     roleInfo.serverName='测试123';
+     roleInfo.zoneId='123456';
+     roleInfo.zoneName='测试124';
+     roleInfo.roleId='10008916';
+     roleInfo.setRoleCreateTime=Date.parse(new Date());
+     roleInfo.roleName='123';
+     roleInfo.roleLevel='1';
+     console.log(roleInfo)
+     var missionId='112';
+     var missionName='测试任务成功';
+     var doMissionTimes=10;
+     var roleCurrentPower=1;
+     var data={};
+     data.roleInfo=roleInfo;
+     data.missionId=missionId;
+     data.missionName=missionName;
+     data.doMissionTimes=doMissionTimes;
+     data.roleCurrentPower=roleCurrentPower;
+     console.log(data)
+     window.XGAndroid.callXGMissionSuccess(JSON.stringify(data));
+}
+```
+- **输入数据格式**
+
+```js
+{
+    "roleInfo": {   //角色信息,参数参考【关于 RoleInfo 的成员说明】
+        "uid": "uc_29c4bb6d76924a86c020397c94d2b138",
+        "roleId": "10008916",
+        "roleType": "create",
+        "roleLevel": "1",
+        ...
+    },
+    "missionId": "112", //任务ID
+    "missionName": "测试任务成功",   //任务名称
+    "doMissionTimes": 10,    //任务执行时间
+    "roleCurrentPower": 1  //角色权限
+}
+
+```
+### 5.5 任务失败
+- **接口**
+**window.XGAndroid.callXGMissionFail(data)**
+
+- **接口说明**
+> 任务执行失败接口
+- **参数说明**
+>  参考下方【输入数据格式】
+- **代码**
+
+```js
+html代码:
+   <button id="btn_mission_fail" onclick="missionFail()">调用 西瓜SDK 【MissionFail】</button>
+
+js代码:
+
+function missionFail() {
+     var roleInfo={};
+     roleInfo.uid='uc_29c4bb6d76924a86c020397c94d2b138';
+     roleInfo.serverId='1200';
+     roleInfo.serverName='测试123';
+     roleInfo.zoneId='123456';
+     roleInfo.zoneName='测试124';
+     roleInfo.roleId='10008916';
+     roleInfo.setRoleCreateTime=Date.parse(new Date());
+     roleInfo.roleName='123';
+     roleInfo.roleLevel='1';
+     console.log(roleInfo)
+     var missionId='113';
+     var missionName='测试任务失败';
+     var doMissionTimes=10;
+     var roleCurrentPower=1;
+     var data={};
+     data.roleInfo=roleInfo;
+     data.missionId=missionId;
+     data.missionName=missionName;
+     data.doMissionTimes=doMissionTimes;
+     data.roleCurrentPower=roleCurrentPower;
+     console.log(data)
+     window.XGAndroid.callXGMissionFail(JSON.stringify(data));
+}
+```
+- **输入数据格式**
+
+```js
+{
+    "roleInfo": {   //角色信息,参数参考【关于 RoleInfo 的成员说明】
+        "uid": "uc_29c4bb6d76924a86c020397c94d2b138",
+        "roleId": "10008916",
+        "roleType": "create",
+        "roleLevel": "1",
+        ...
+    },
+    "missionId": "113", //任务ID
+    "missionName": "测试任务失败",   //任务名称
+    "doMissionTimes": 10,    //任务执行时间
+    "roleCurrentPower": 1  //角色权限
+}
+
+```
 
 
 
