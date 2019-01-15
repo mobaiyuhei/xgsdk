@@ -5,4 +5,6 @@
   * [1.1. H5打包工具使用指南 ](chapter1/article1.md)
 * [2. 接入文档](chapter2.md)
   * [2.1 h5加壳服务端接口说明](chapter2/article1.md)
+* [3. HTML5游戏接入文档](chapter3.md)
+  * [3.1 cp接入文档](chapter3/article1.md)
 
