@@ -4,5 +4,5 @@
 
 本章节适用于游戏服务端开发人员
 
-[**cp接入文档**](/chapter3/article1.md "cp接入文档")
+[**3.1 cp接入文档**](/chapter3/article1.md)
 

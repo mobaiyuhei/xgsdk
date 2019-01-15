@@ -1,32 +1,33 @@
-
-
 # HTML5游戏接入文档
 
 ## 文档修订记录
 
-编号 | 日期 |说明
----|---|---
-01 | 2019.01.15 | 初始版本
-02 |  | 
+| 编号 | 日期 | 说明 |
+| --- | --- | --- |
+| 01 | 2019.01.15 | 初始版本 |
+|  | 02 |  |
 
 ## 接入流程概述
+
 1. CP需要在《西瓜平台》注册成为企业开发者，并创建类型为H5页游的游戏。
 2. 录入相关信息后，会提供CP游戏接口实现所需的XgAppId和XgAppKey。
-3. 平台提供给CP使用的XGJSSDK地址为：https://h5ex.xgsdk.com/ex/sdk/xgsdk.js
- CP需在游戏中集成该SDK，并通过此SDK调用平台提供的接口。
+3. 平台提供给CP使用的XGJSSDK地址为：[https://h5ex.xgsdk.com/ex/sdk/xgsdk.js](https://h5ex.xgsdk.com/ex/sdk/xgsdk.js)
+   CP需在游戏中集成该SDK，并通过此SDK调用平台提供的接口。
 4. 平台测试环境
-> CP在完成上述过程后可以访问此链接地址进行集成测试：XXXXXXXXXXXXXXXXX
-其中gameId为上述过程中平台提供给CP的gameId。
+   > CP在完成上述过程后可以访问此链接地址进行集成测试：XXXXXXXXXXXXXXXXX  
+   > 其中gameId为上述过程中平台提供给CP的gameId。
 
 ## 接口
+
 ### 1.用户登录
-- **接口:**
-  **window.XGSDK.login(authInfo)**
-- **接口说明**
-> 玩家角色进入游戏时调用
-- **代码**
-```js
-authInfo = {
+
+* **接口:**
+  **window.XGSDK.login\(authInfo\)**
+* **接口说明**
+  > 玩家角色进入游戏时调用
+* **代码**
+  ```js
+  authInfo = {
     xgAppId:'91000184',
     planId:'2079',
     channelId:'jinshan',
@@ -35,28 +36,30 @@ authInfo = {
     uid: '123456',
     extData: '{"version":"4.0.6"}'
     };
-window.XGSDK.login(authInfo);
-```
-### 2.退出游戏
-- **接口:**
-  **window.XGSDK.exit()**
-- **接口说明**
-> 玩家角色退出游戏时调用
-- **代码**
-```js
-function(){
+  window.XGSDK.login(authInfo);
+  ```
+
+  ### 2.退出游戏
+* **接口:**
+  **window.XGSDK.exit\(\)**
+* **接口说明**
+  > 玩家角色退出游戏时调用
+* **代码**
+  ```js
+  function(){
     console.log('exit game...');
     window.XGSDK.exit();
     }
-```
-### 3.支付充值
-- **接口:**
-  **window.XGSDK.pay(orderInfo,callback)**
-- **接口说明**
-> 玩家角色充值时调用
-- **代码**
-```js
-var orderInfo = {
+  ```
+
+  ### 3.支付充值
+* **接口:**
+  **window.XGSDK.pay\(orderInfo,callback\)**
+* **接口说明**
+  > 玩家角色充值时调用
+* **代码**
+  ```js
+  var orderInfo = {
     productId: '80',
     productName: '测试币',
     productQuantity: 1,
@@ -80,15 +83,16 @@ var orderInfo = {
     window.XGSDK && window.XGSDK.pay(orderInfo, function(msg){
             console.log(msg);
     });
-```
-### 4.数据上报
-- **接口:**
-  **window.XGSDK.dataReport(data)**
-- **接口说明**
-> 玩家角色上报数据时调用
-- **代码**
-```js
-var roleInfo={
+  ```
+
+  ### 4.数据上报
+* **接口:**
+  **window.XGSDK.dataReport\(data\)**
+* **接口说明**
+  > 玩家角色上报数据时调用
+* **代码**
+  ```js
+  var roleInfo={
         msgType: 'role.login',
         accountId: 'uc_29c4bb6d76924a86c020397c94d2b138',
         roleId: '10008916',  
@@ -104,16 +108,20 @@ var roleInfo={
         gender: 'f',            //角色性别 m:男 f:女
         battleScore: '100'   
         };
-window.XGSDK.dataReport(roleInfo);
-```
-### 5.分享
-- **接口:**
-  **window.XGSDK.share(shareInfo, callback)**
-- **接口说明**
-> 玩家角色分享时调用
-- **代码**
-```js
-function(){
+  window.XGSDK.dataReport(roleInfo);
+  ```
+
+  ### 5.分享
+* **接口:**
+  **window.XGSDK.share\(shareInfo, callback\)**
+* **接口说明**
+  > 玩家角色分享时调用
+* **代码**
+  ```js
+  function(){
     window.XGSDK.share('share game...');
     }
-```
+  ```
+
+
+
