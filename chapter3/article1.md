@@ -5,7 +5,7 @@
 | 编号 | 日期 | 说明 |
 | --- | --- | --- |
 | 01 | 2019.01.15 | 初始版本 |
-|  | 02 |  |
+| 02 |  |  |
 
 ## 接入流程概述
 
@@ -26,6 +26,7 @@
 * **接口说明**
   > 玩家角色进入游戏时调用
 * **代码**
+
   ```js
   authInfo = {
     xgAppId:'91000184',
@@ -40,11 +41,13 @@
   ```
 
   ### 2.退出游戏
+
 * **接口:**
   **window.XGSDK.exit\(\)**
 * **接口说明**
   > 玩家角色退出游戏时调用
 * **代码**
+
   ```js
   function(){
     console.log('exit game...');
@@ -53,11 +56,13 @@
   ```
 
   ### 3.支付充值
+
 * **接口:**
   **window.XGSDK.pay\(orderInfo,callback\)**
 * **接口说明**
   > 玩家角色充值时调用
 * **代码**
+
   ```js
   var orderInfo = {
     productId: '80',
@@ -86,11 +91,13 @@
   ```
 
   ### 4.数据上报
+
 * **接口:**
   **window.XGSDK.dataReport\(data\)**
 * **接口说明**
   > 玩家角色上报数据时调用
 * **代码**
+
   ```js
   var roleInfo={
         msgType: 'role.login',
@@ -112,6 +119,7 @@
   ```
 
   ### 5.分享
+
 * **接口:**
   **window.XGSDK.share\(shareInfo, callback\)**
 * **接口说明**
