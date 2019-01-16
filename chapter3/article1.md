@@ -38,7 +38,7 @@ key | string| 游戏服务端与SDK服务端通信校验使用（由于涉及到
 其中gameId为上述过程中平台提供给CP的gameId。
 
 4. 平台游戏集成架构图
-
+![](/img/structure.png)
 
 ## 接口
 ### 0.引用SDK【必接】
