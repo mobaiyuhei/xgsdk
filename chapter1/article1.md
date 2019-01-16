@@ -15,7 +15,7 @@
 
 1. **目录结构说明**
 
-![](https://wx4.sinaimg.cn/mw690/8c742d9fly1fyuclqdf4cj20i6067wer.jpg)
+![](/img/1-mulu.jpg)
 
 * **out：**H5打包工具Apk输出路径
 * **resource：**H5打包核心资源，请勿修改
@@ -30,7 +30,7 @@
 
 打开执行程序，主界面如下图：
 
-![](https://wx1.sinaimg.cn/mw690/8c742d9fly1fyuclqdn15j20ka0cwq3r.jpg)
+![](/img/1-zhujiemian.jpg)
 
 * **游戏url：**H5游戏所需要加载的URL地址
 * **游戏名称：**显示在安卓手机桌面的名称
@@ -44,34 +44,14 @@
 
 程序会弹框提示，如下图：
 
-![](https://wx4.sinaimg.cn/mw690/8c742d9fly1fyuclqck28j205a0463yh.jpg\)
+![](/img/1-open.jpg)
 
 点击“是”，打开文件夹，如下如：
 
-![](https://wx4.sinaimg.cn/mw690/8c742d9fly1fyuclqclmbj20ha02pa9z.jpg)
+![](/img/1-apk.jpg)
 
 * **log.txt：**为执行日志文件,在打包主窗口下面日志窗口也有显示
 * **XX\_YYYYMMDD\_hhmmss.apk：**输出apk文件
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
