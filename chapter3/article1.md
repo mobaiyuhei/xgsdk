@@ -35,7 +35,7 @@ key | string| 游戏服务端与SDK服务端通信校验使用（由于涉及到
 
 3. 平台测试环境
 > CP在完成上述过程后可以访问此链接地址进行集成测试：XXXXXXXXXXXXXXXXX
-其中gameId为上述过程中平台提供给CP的gameId。
+其中xgAppId为上述过程中平台提供给CP的xgAppId。
 
 4. 平台游戏集成架构图
 ![](/img/structure.png)
