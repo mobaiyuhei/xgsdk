@@ -14,10 +14,11 @@
 3. 平台提供给CP使用的XGJSSDK地址为：[https://h5ex.xgsdk.com/ex/sdk/xgsdk.js](https://h5ex.xgsdk.com/ex/sdk/xgsdk.js)
    CP需在游戏中集成该SDK，并通过此SDK调用平台提供的接口。
 4. 平台测试环境
+
    > CP在完成上述过程后可以访问此链接地址进行集成测试：XXXXXXXXXXXXXXXXX  
    > 其中gameId为上述过程中平台提供给CP的gameId。
 
-   ![](/img/structure.png) 
+   ![](/img/structure.png)
 
 ## 接口
 
@@ -48,7 +49,9 @@
   **window.XGSDK.exit\(\)**
 
 * **接口说明**
+
   > 玩家角色退出游戏时调用
+
 * **代码**
 
   ```js
@@ -64,7 +67,9 @@
   **window.XGSDK.pay\(orderInfo,callback\)**
 
 * **接口说明**
+
   > 玩家角色充值时调用
+
 * **代码**
 
   ```js
@@ -100,7 +105,9 @@
   **window.XGSDK.dataReport\(data\)**
 
 * **接口说明**
+
   > 玩家角色上报数据时调用
+
 * **代码**
 
   ```js
@@ -129,7 +136,9 @@
   **window.XGSDK.share\(shareInfo, callback\)**
 
 * **接口说明**
+
   > 玩家角色分享时调用
+
 * **代码**
   ```js
   function(){
