@@ -4,5 +4,7 @@
 
 本章节适用于游戏服务端开发人员
 
-[**h5加壳服务端接口说明**](/chapter2/article1.md "h5加壳服务端接口说明")
+[2.1 h5加壳服务端接口说明](/chapter2/article1.md)
+
+[2.2 HTML5游戏cp接入文档](/chapter3/article1.md)
 
