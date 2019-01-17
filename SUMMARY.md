@@ -7,6 +7,6 @@
   * [2.1 h5加壳服务端接口说明](chapter2/article1.md)
 * [3. HTML5游戏接入文档](chapter3.md)
   * [3.1 cp接入文档](chapter3/article1.md)
-* [chapter4](chapter4.md)
+* [4.申请渠道参数](chapter4.md)
   * [article1](chapter4/article1.md)
 
