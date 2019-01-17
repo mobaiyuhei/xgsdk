@@ -7,7 +7,7 @@
   * [2.1 h5加壳服务端接口说明](chapter2/article1.md)
   * [2.2 HTML5游戏cp接入文档](chapter3/article1.md)
 * [3.申请渠道参数](chapter4.md)
-  * [4.1 西瓜支持的渠道](chapter4/article1.md)
+  * [3.1 西瓜支持的渠道](chapter4/article1.md)
   * [4.2 参数申请指南](chapter4/article2.md)
     * [4.2.1 常见问题](chapter4/article2/aticle1.md)
 
