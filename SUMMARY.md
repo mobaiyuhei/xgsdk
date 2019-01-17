@@ -9,5 +9,5 @@
 * [3.申请渠道参数](chapter3.md)
   * [3.1 西瓜支持的渠道](chapter3/article1.md)
   * [3.2 参数申请指南](chapter3/article2.md)
-    * [3.2.1 常见问题](chapter3/article2/aticle1.md)
+    * [3.2.1 常见问题](chapter3/article2/article1.md)
 
