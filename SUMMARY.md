@@ -8,5 +8,5 @@
 * [3. HTML5游戏接入文档](chapter3.md)
   * [3.1 cp接入文档](chapter3/article1.md)
 * [chapter4](chapter4.md)
-  * article1
+  * [article1](chapter4/article1.md)
 
