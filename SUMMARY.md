@@ -8,5 +8,5 @@
 * [3. HTML5游戏接入文档](chapter3.md)
   * [3.1 cp接入文档](chapter3/article1.md)
 * [4.申请渠道参数](chapter4.md)
-  * [article1](chapter4/article1.md)
+  * [4.1 西瓜支持的渠道](chapter4/article1.md)
 
